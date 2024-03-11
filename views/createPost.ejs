@@ -1,0 +1,24 @@
+<%- include ("partials/header.ejs") %>
+
+    <div class="container">
+        <form action="/createpost" method="POST">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" name="title" class="form-control" id="femail" placeholder="Enter title">
+            </div>
+            <div class="form-group">
+                <label for="sDescription">Short Description</label>
+                <input type="text" name="sDescription" class="form-control" id="sDescription"
+                    placeholder="short description for the post">
+            </div>
+
+            <div class="form-group">
+                <label for="post">Text for post</label>
+                <textarea class="form-control" id="epost" rows="10"
+                    placeholder="enter the text for the post"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3 mb-3">Create post</button>
+        </form>
+    </div>
+
+    <%- include("partials/footer.ejs")%>
